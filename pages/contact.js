@@ -3,18 +3,16 @@ import Layout from "@/components/layout";
 import HeaderOne from "@/components/header-one";
 import MenuContextProvider from "@/context/menu-context";
 import PageHeader from "@/components/page-header";
-import ContactThree from "@/components/contact-three";
-import ContactMap from "@/components/contact-map";
+import ContactOne from "@/components/contact-one";
 import Footer from "@/components/footer";
 
 const Contact = () => {
   return (
     <MenuContextProvider>
-      <Layout PageTitle="Contact Page">
+      <Layout PageTitle="Kontakt">
         <HeaderOne />
-        <PageHeader title="Contact Us" name="Contact" />
-        <ContactThree />
-        <ContactMap />
+        <PageHeader title="Kontakt" name="Kontakt" />
+        <ContactOne />
         <Footer />
       </Layout>
     </MenuContextProvider>

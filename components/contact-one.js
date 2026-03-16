@@ -1,50 +1,128 @@
 import React from "react";
 
 const ContactOne = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const data = {
+      firstName: form.firstName.value,
+      lastName: form.lastName.value,
+      phone: form.phone.value,
+      email: form.email.value,
+      location: form.location.value,
+      deviceType: form.deviceType.value,
+      problem: form.problem.value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        alert("Thank you! Your request has been sent.");
+        form.reset();
+      } else {
+        alert("Something went wrong. Please try again later.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong. Please try again later.");
+    }
+  };
+
   return (
     <section className="contact_form_area">
-      <div className="contact_form_width">
-        <h1 className="contact_map_title text-center">
-          We&apos;re not putting on airs - our work is guaranteed to satisfy.
-        </h1>
-        <div id="map">
-          <iframe
-            title="template google map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
       <div className="contact_form_width contact-right">
         <div className="hero-title-with-shape">
-          <h4 className="heading_with_border">Get a free quote</h4>
-          <h1>To request a service call, please fill out the form below</h1>
+          <h4 className="heading_with_border">
+            Schnellanfrage – wir rufen Sie zurück!
+          </h4>
+          <h1>
+            Hinterlassen Sie uns Ihre Kontaktdaten und eine kurze
+            Problembeschreibung. Unser Service‑Team meldet sich so rasch wie
+            möglich telefonisch bei Ihnen.
+          </h1>
+          <p className="contact_form_hotline">
+            Oder rufen Sie uns direkt an unter{" "}
+            <a href="tel:+436605510339">+43 660 551 0339</a>.
+          </p>
         </div>
-        <form action="#" method="post">
-          <input
-            className="half_width input_m_right"
-            type="text"
-            name="fname"
-            placeholder="Your name"
-          />
-          <input
-            className="half_width"
-            type="EMAIL"
-            name="email"
-            placeholder="Email address"
-          />
-          <input type="tel" name="tell" placeholder="Phone number" />
-          <span className="select_icon">
-            <select name="select" id="select">
-              <option value="option0">Select Service</option>
-              <option value="option1">Service 1</option>
-              <option value="option2">Service 2</option>
-              <option value="option3">Service 3</option>
-              <option value="option4">Service 4</option>
-            </select>
-          </span>
-          <button className="btn-yellow" value="SUBMIT NOW">
-            SUBMIT NOW
+        <form onSubmit={handleSubmit}>
+          <div className="feedback_form_row">
+            <div className="half_width input_m_right">
+              <label className="feedback_label" htmlFor="firstName">
+                Vorname *
+              </label>
+              <input type="text" id="firstName" name="firstName" />
+            </div>
+            <div className="half_width">
+              <label className="feedback_label" htmlFor="lastName">
+                Nachname *
+              </label>
+              <input type="text" id="lastName" name="lastName" />
+            </div>
+          </div>
+          <div className="feedback_form_row">
+            <div className="half_width input_m_right">
+              <label className="feedback_label" htmlFor="phone">
+                Telefonnummer *
+              </label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div className="half_width">
+              <label className="feedback_label" htmlFor="email">
+                E‑Mail‑Adresse *
+              </label>
+              <input type="email" id="email" name="email" />
+            </div>
+          </div>
+          <div className="feedback_form_row">
+            <label className="feedback_label" htmlFor="location">
+              Standort / PLZ *
+            </label>
+            <input type="text" id="location" name="location" />
+          </div>
+          <div className="feedback_form_row">
+            <label className="feedback_label" htmlFor="deviceType">
+              Gerätetyp *
+            </label>
+            <span className="select_icon">
+              <select name="deviceType" id="deviceType">
+                <option value="">Bitte wählen …</option>
+                <option value="herd-backofen">Herd &amp; Backofen</option>
+                <option value="waschmaschine">Waschmaschine</option>
+                <option value="trockner">Trockner</option>
+                <option value="geschirrspueler">Geschirrspüler</option>
+                <option value="kuehlschrank">
+                  Kühlschrank / Gefriergerät
+                </option>
+                <option value="mikrowelle">Mikrowelle</option>
+                <option value="dunstabzug">Dunstabzugshaube</option>
+                <option value="sonstiges">Sonstiges Gerät</option>
+              </select>
+            </span>
+          </div>
+          <div className="feedback_form_row">
+            <label className="feedback_label" htmlFor="problem">
+              Problembeschreibung *
+            </label>
+            <textarea
+              id="problem"
+              name="problem"
+              rows="4"
+              placeholder="Beschreiben Sie kurz das Problem mit Ihrem Gerät …"
+            ></textarea>
+          </div>
+          <p className="contact_form_disclaimer">
+            Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten gemäß
+            unserer Datenschutzerklärung zu.
+          </p>
+          <button className="btn-yellow" value="SEND" type="submit">
+            Anfrage senden
           </button>
         </form>
       </div>

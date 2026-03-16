@@ -54,30 +54,17 @@ const Footer = () => {
             <div className="col-md-4 col-sm-6">
               <div className="newslatter">
                 <h2>Newsletter</h2>
-                <input type="EMAIL" placeholder="Enter your email" />
+                <input type="EMAIL" placeholder="E-Mail-Adresse" />
                 <button className="btn-yellow" value="SUBMIT NOW">
-                  SUBSCRIBE
+                  Anmelden
                 </button>
               </div>
             </div>
           </div>
           <div className="copyright_area">
             <div className="row">
-              <div className="col-md-8 col-sm-6 copyright_text">
-                <p>
-                  &copy; copyright {new Date().getFullYear()} by Layerdrops.com
-                </p>
-              </div>
-              <div className="col-md-4 col-sm-6 copyright_social text-end">
-                <ul>
-                  {FooterBottomData.social.map(({ icon, url }, index) => (
-                    <li key={`footer-social-link-${index}`}>
-                      <a href={url}>
-                        <i className={`fa ${icon}`}></i>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+              <div className="col-md-12 col-sm-12 copyright_text text-center">
+                <p>© 2026 Kundendienstgeraete. Alle Rechte vorbehalten.</p>
               </div>
             </div>
           </div>

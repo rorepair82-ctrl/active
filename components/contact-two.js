@@ -8,16 +8,18 @@ const ContactTwo = () => {
           <div className="col-md-6">
             <div className="contact-right contact_details">
               <div className="hero-title-with-shape">
-                <h4 className="heading_with_border">Get a free quote</h4>
+                <h4 className="heading_with_border">
+                  Schnellanfrage für Ihren Service
+                </h4>
                 <h1>
-                  To request a service call, please fill out the form below
+                  Füllen Sie das Formular aus und wir melden uns schnellstmöglich
+                  telefonisch bei Ihnen.
                 </h1>
               </div>
               <p>
-                There are many variations of passages of new lorem ipsum
-                available, but the majority have suffered alteration in some
-                form by injected humour, or randomised words which don&apos;t
-                look even slightly believable.
+                Je genauer Sie Ihr Gerät und den Fehler beschreiben, desto
+                besser können wir den Einsatz vorbereiten und Ihnen einen
+                passenden Termin vorschlagen.
               </p>
             </div>
           </div>
@@ -26,26 +28,25 @@ const ContactTwo = () => {
               <form action="#" method="post">
                 <input
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Ihr Name"
                   className="half_width input_m_right"
                 />
                 <input
                   type="EMAIL"
-                  placeholder="Email Address"
+                  placeholder="E-Mail-Adresse"
                   className="half_width"
                 />
-                <input type="tel" placeholder="Phone Number" />
+                <input type="tel" placeholder="Telefonnummer" />
                 <span className="select_icon">
                   <select name="select" id="select">
-                    <option value="option0">Select Service</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                    <option value="option4">Option 4</option>
+                    <option value="option0">Gewünschte Leistung wählen</option>
+                    <option value="option1">Reparatur</option>
+                    <option value="option2">Altgeräte-Entsorgung</option>
+                    <option value="option3">Beratung</option>
                   </select>
                 </span>
                 <button className="btn-yellow" value="SUBMIT NOW">
-                  SUBMIT NOW
+                  Anfrage senden
                 </button>
               </form>
             </div>

@@ -10,7 +10,7 @@ import ServiceDetails from "@/components/service-details";
 const ServiceDetailsPage = () => {
   return (
     <MenuContextProvider>
-      <Layout PageTitle="Service Details">
+      <Layout PageTitle="Leistungsdetails">
         <HeaderOne />
         <PageHeader title="Service Details" name="Service" />
         <ServiceDetails />

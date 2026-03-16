@@ -30,32 +30,6 @@ const HeaderOne = () => {
 
   return (
     <Fragment>
-      <header className="header_area">
-        <div className="container">
-          <div className="header_social">
-            <ul className="hd_social_icons">
-              {FooterBottomData.social.map(({ icon, url }, index) => (
-                <li key={`header-social-${index}`}>
-                  <a href={url}>
-                    <i className={`fa ${icon}`}></i>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="header_contact text-end">
-            <ul className="hd_contact">
-              {TopbarInfos.map(({ icon, tagLine, text, url }, index) => (
-                <li key={`header-info-${index}`}>
-                  <i className={icon}></i> {tagLine}
-                  <a href={url}> {text}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </header>
-
       <div
         className={`main_menu_area ${
           true === sticky
@@ -66,7 +40,7 @@ const HeaderOne = () => {
         <div className="container">
           <div className="main_menu_area__left">
             <Link href="/">
-              <Img src={Logo.dark} alt="Awesome Image" layout="fixed" />
+              <Img src={Logo.dark} alt="HG Reparatur Logo" />
             </Link>
             <span className="mobile-menu__toggler" onClick={handleMenuClick}>
               <i className="fa fa-bars"></i>
@@ -96,8 +70,8 @@ const HeaderOne = () => {
                 })}
               </ul>
             </nav>
-            <Link href="/contact" className="btn-yellow">
-              BOOK TODAY
+            <Link href="tel:+436605510339" className="btn-yellow">
+              JETZT ANRUFEN
             </Link>
           </div>
         </div>

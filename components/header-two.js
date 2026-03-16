@@ -40,7 +40,7 @@ const HeaderTwo = () => {
         <div className="container-fluid">
           <div className="main_menu_area__left">
             <Link href="/">
-              <Img src={Logo.dark} alt="Awesome Image" />
+              <Img src={Logo.dark} alt="HG Reparatur Logo" />
             </Link>
             <span className="mobile-menu__toggler" onClick={handleMenuClick}>
               <i className="fa fa-bars"></i>

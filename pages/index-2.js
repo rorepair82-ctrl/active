@@ -4,7 +4,6 @@ import Layout from "@/components/layout";
 import Footer from "@/components/footer";
 import HeaderTwo from "@/components/header-two";
 import CtaOne from "@/components/cta-one";
-import BlogOne from "@/components/blog-one";
 import TestimonialsOne from "@/components/testimonials-one";
 import ServiceOne from "@/components/service-one";
 import ContactTwo from "@/components/contact-two";
@@ -17,7 +16,7 @@ import SliderTwo from "@/components/slider-two";
 const HomeTwo = () => {
   return (
     <MenuContextProvider>
-      <Layout PageTitle="Home Two">
+      <Layout PageTitle="Startseite Variante 2">
         <HeaderTwo />
         <SliderTwo />
         <AboutThree />
@@ -27,7 +26,6 @@ const HomeTwo = () => {
         <TestimonialsOne />
         <AboutTwo />
         <VideoOne />
-        <BlogOne />
         <ContactTwo />
         <CtaOne />
         <Footer />

@@ -12,7 +12,7 @@ import SponsorOne from "@/components/sponsor-one";
 const Service = () => {
   return (
     <MenuContextProvider>
-      <Layout PageTitle="Service Page">
+      <Layout PageTitle="Leistungen">
         <HeaderOne />
         <PageHeader title="Service" name="Service" />
         <ServiceInfo />

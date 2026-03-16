@@ -8,26 +8,23 @@ const ContactThree = () => {
           <div className="col-md-6">
             <div className="contact-right contact_details">
               <div className="hero-title-with-shape">
-                <h4 className="heading_with_border">Contact with us</h4>
-                <h1>We offer 24/7 emergency service to all of our customers</h1>
+                <h4 className="heading_with_border">Kontakt aufnehmen</h4>
+                <h1>Wir sind für Ihre Haushaltsgeräte im Einsatz</h1>
               </div>
               <p>
-                There are many variations of passages of new lorem ipsum
-                available, but the majority have suffered.
+                Beschreiben Sie kurz Ihr Anliegen – wir melden uns so rasch wie
+                möglich mit einem Terminvorschlag oder Rückruf.
               </p>
               <div className="contact_location_box">
                 <div className="contact_location_map">
                   <span className="icon-location"></span>
-                  <p>
-                    66 broklyn street, <br />
-                    new york
-                  </p>
+                  <p>Österreichweit im Einsatz</p>
                 </div>
                 <div className="contact_location_map contact_location_call">
                   <span className="icon-contact_call"></span>
                   <p>
-                    help@loazzne.com <br />
-                    666 888 000
+                    office@hgreparatur.at <br />
+                    +436605510339
                   </p>
                 </div>
               </div>
@@ -40,24 +37,24 @@ const ContactThree = () => {
                   className="half_width input_m_right"
                   type="text"
                   name="name"
-                  placeholder="Your name"
+                  placeholder="Ihr Name"
                 />
                 <input
                   className="half_width"
                   type="EMAIL"
                   name="email"
-                  placeholder="Email address"
+                  placeholder="E-Mail-Adresse"
                 />
-                <input type="tel" name="tel" placeholder="Phone number" />
+                <input type="tel" name="tel" placeholder="Telefonnummer" />
                 <textarea
                   name="content"
                   id="content"
                   cols="20"
                   rows="5"
-                  placeholder="Write message"
+                  placeholder="Nachricht schreiben"
                 ></textarea>
-                <button className="btn-yellow" value="SUBMIT NOW">
-                  SUBMIT NOW
+                <button className="btn-yellow" value="SEND">
+                  Nachricht senden
                 </button>
               </form>
             </div>

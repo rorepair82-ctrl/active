@@ -12,40 +12,27 @@ const BlogPost = () => {
         </div>
         <div className="blog_share_details blog_share_details__details">
           <span className="comment_author">
-            by <a href="#">admin</a> - <a href="#">3 Comments</a>
+            von <a href="#">Admin</a> - <a href="#">3 Kommentare</a>
           </span>
-          <h1>Simple hack to improve A/C efficiency</h1>
+          <h1>Tipps für einen effizienten Geräteeinsatz</h1>
           <p>
-            There are many variations passages of lorem ipsum available but the
-            majority have suffered alteration. Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry. Lorem Ipsum has been the
-            industry&apos;s standard dummy text ever since the 1500s, when an
-            unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum.
+            Gut eingestellte und regelmäßig gewartete Haushaltsgeräte arbeiten
+            effizienter und verbrauchen weniger Energie. Achten Sie auf
+            saubere Filter, frei zugängliche Lüftungsöffnungen und passende
+            Programme für Ihren Alltag.
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in
-            the 1960s with the release of Letraset sheets containing lorem ipsum
-            passages, and more recently with desktop publishing software like
-            aldus page maker including versions of lorem ipsum.
+            Gern beraten wir Sie persönlich, wie Sie Ihre Geräte optimal
+            einsetzen und wann sich eine professionelle Wartung oder Reparatur
+            lohnt.
           </p>
         </div>
       </div>
       <div className="blog_social_share_box">
         <div className="share_box_left">
           <p>
-            Tags: <a href="#">repairing,</a> <a href="#">heating,</a>{" "}
-            <a href="#">air,</a> <a href="#">conditioning</a>
+            Tags: <a href="#">Reparatur,</a> <a href="#">Haushaltsgeräte,</a>{" "}
+            <a href="#">Energie sparen</a>
           </p>
         </div>
         <div className="share_box_left text-end">

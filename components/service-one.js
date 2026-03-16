@@ -14,14 +14,18 @@ const ServiceOne = () => {
               <h1>{title}</h1>
             </div>
           </div>
-          {posts.map(({ image, icon, title, text, button }, index) => (
+          {posts.map(({ image, title, text, button }, index) => (
             <div className="col-lg-4 col-md-6" key={`service-one-key-${index}`}>
               <div className="service_box">
                 <div className="service_img">
-                  <Img src={image} alt="service 1" layout="responsive" />
-                  <div className="icon-box">
-                    <i className={icon}></i>
-                  </div>
+                  <Img
+                    src={image}
+                    alt={title}
+                    layout="responsive"
+                    width={600}
+                    height={400}
+                    objectFit="cover"
+                  />
                 </div>
                 <div className="service_details">
                   <Link href={button.url}>

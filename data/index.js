@@ -5,25 +5,15 @@ export const Logo = {
 
 export const NavLinksData = [
   {
-    name: "Home",
-    url: "/",
-    subItems: [
-      {
-        name: "Home 01",
-        url: "/"
-      },
-      {
-        name: "Home 02",
-        url: "/index-2"
-      }
-    ]
+    name: "Startseite",
+    url: "/"
   },
   {
-    name: "About",
+    name: "Über uns",
     url: "/about"
   },
   {
-    name: "Services",
+    name: "Leistungen",
     url: "/services",
     subItems: [
       {
@@ -65,20 +55,6 @@ export const NavLinksData = [
     ]
   },
   {
-    name: "Blog",
-    url: "/blog",
-    subItems: [
-      {
-        name: "Blog Page",
-        url: "/blog"
-      },
-      {
-        name: "Blog Details",
-        url: "/blog-details"
-      }
-    ]
-  },
-  {
     name: "Contact",
     url: "/contact"
   }
@@ -86,20 +62,8 @@ export const NavLinksData = [
 
 export const TopbarInfos = [
   {
-    icon: "icon-placeholder",
-    tagLine: "Address",
-    text: "66 Broklyn Street, New York",
-    url: "#"
-  },
-  {
-    icon: "icon-phone-call",
-    tagLine: "Call Now",
-    text: "666 888 000",
-    url: "tel:666-888-000"
-  },
-  {
     icon: "icon-clock",
-    tagLine: "Open Hours",
+    tagLine: "Servicezeiten",
     text: " Mon-Sat: 9am - 6pm",
     url: "#"
   }
@@ -111,25 +75,11 @@ import slideOneImage3 from "@/images/slider/slider-3.jpg";
 
 export const SlideOneData = [
   {
-    backgroundImage: slideOneImage1,
-    title: "Heating and Air Conditioning Specialist",
-    text: "Choose the Best Company",
-    button: "GET A FREE QUOTE",
-    url: "/contact"
-  },
-  {
-    backgroundImage: slideOneImage2,
-    title: "Installation Services & Repair",
-    text: "Reliable Air Conditioning",
-    button: "GET A FREE QUOTE",
-    url: "/contact"
-  },
-  {
-    backgroundImage: slideOneImage3,
-    title: "Heating and Air Conditioning Specialist",
-    text: "Choose the Best Company",
-    button: "GET A FREE QUOTE",
-    url: "/contact"
+    backgroundImage: slideOneImage5,
+    title: "Ihr Partner für Haushaltsgeräte Reparatur",
+    text: "Schnell, zuverlässig, vor Ort",
+    button: "JETZT ANRUFEN",
+    url: "tel:+436605510339"
   }
 ];
 
@@ -139,20 +89,20 @@ import slideOneImage5 from "@/images/slider/slider-5.jpg";
 export const SlideTwoData = [
   {
     backgroundImage: slideOneImage4,
-    title: "Heating and Air Conditioning Specialis",
-    button: "GET A FREE QUOTE",
+    title: "Schnelle Hilfe bei Geräteausfall",
+    button: "JETZT ANRUFEN",
     url: "/contact"
   },
   {
     backgroundImage: slideOneImage5,
-    title: "Keep your family happy this winter, and warm.",
-    button: "GET A FREE QUOTE",
+    title: "Reparatur von Herd bis Kühlschrank",
+    button: "TERMIN BUCHEN",
     url: "/contact"
   },
   {
     backgroundImage: slideOneImage4,
-    title: "Heating and Air Conditioning Specialist",
-    button: "GET A FREE QUOTE",
+    title: "Meisterbetrieb für Haushaltsgeräte",
+    button: "MEHR ERFAHREN",
     url: "/contact"
   }
 ];
@@ -160,40 +110,37 @@ export const SlideTwoData = [
 export const FeatureOneData = [
   {
     icon: "icon-wallet",
-    title: "No Upfront Payments"
-  },
-  {
-    icon: "icon-diploma",
-    title: "Satisfaction Guarantee"
+    title: "Transparente Festpreise"
   },
   {
     icon: "icon-big_clock",
-    title: "Emergency Service"
+    title: "Schnelle Terminvergabe"
   },
   {
     icon: "icon-handshake",
-    title: "Fixed Right Promise"
+    title: "Reparatur statt teurem Neukauf"
   },
   {
     icon: "icon-mechanic",
-    title: "8 Years Experience"
+    title: "Über 8 Jahre Erfahrung"
   }
 ];
 
 export const AboutOneData = {
-  title: "Heating and air conditioning repair and installation company",
-  tagLine: "Welcome to loazzne",
+  title: "Spezialisierter Service für Haushaltsgeräte-Reparatur",
+  tagLine: "Willkommen bei Ihrem Geräteprofi",
   content:
-    "There are many variations of passages of lorem ipsum available, but the majorify have suffered alteration in some form by injected humour, or randmised words which don't look even slightly believable.",
+    "Wir reparieren Herd, Backofen, Waschmaschine, Trockner, Geschirrspüler, Mikrowelle und Kühlschrank fachgerecht – schnell, zuverlässig und mit transparenten Preisen. Statt direkt neu zu kaufen, prüfen wir, ob sich eine Reparatur lohnt und verlängern so die Lebensdauer Ihrer Geräte.",
   button: {
     url: "/about",
-    label: "LEARN MORE"
+    label: "MEHR ÜBER UNS"
   }
 };
 
-import serviceImage1 from "@/images/services/service-1.jpg";
-import serviceImage2 from "@/images/services/service-2.jpg";
-import serviceImage3 from "@/images/services/service-3.jpg";
+import serviceImage1 from "@/images/services/Herd-Backofen-Reparatur.jpg";
+import serviceImage2 from "@/images/services/Waschmaschinen Reparatur.jpg";
+import serviceImage3 from "@/images/services/trockner-reparatur.jpg";
+import serviceImageAlt from "@/images/services/Altger\u00e4te Entsorgen.png";
 
 export const ServiceOneData = {
   title: "Unsere Services",
@@ -254,7 +201,7 @@ export const ServiceOneData = {
       }
     },
     {
-      image: serviceImage3,
+      image: serviceImageAlt,
       icon: "icon-building",
       title: "Altgeräte Entsorgen",
       text:
@@ -290,21 +237,21 @@ export const ServiceOneData = {
 };
 
 export const CallToActionOneData = {
-  title: "No overtime charges, 7 days a week",
+  title: "Schnelle Hilfe bei defekten Haushaltsgeräten – ohne versteckte Kosten",
   button: {
     url: "/contact",
-    label: "GET A FREE QUOTE"
+    label: "JETZT KOSTENLOSE ANFRAGE STELLEN"
   }
 };
 
 export const CallToActionTwoData = {
   left: {
-    text: "Air Conditioning Services",
-    title: "Cool it down"
+    text: "Reparatur von Waschmaschinen & Trocknern",
+    title: "Damit die Wäsche wieder läuft"
   },
   right: {
-    text: "Heating Services",
-    title: "Heat it up"
+    text: "Reparatur von Kühl- & Gefriergeräten",
+    title: "Alles wieder zuverlässig gekühlt"
   }
 };
 
@@ -312,19 +259,19 @@ import funfactShape from "@/images/shape/about-shape.png";
 
 export const FunfactOneData = {
   shapeImage: funfactShape,
-  title: "Numbers Speakers.",
+  title: "Zahlen, die für uns sprechen.",
   posts: [
     {
       count: 8870,
-      text: "Air Conditioning Repairs and Install"
+      text: "erfolgreiche Reparaturen von Haushaltsgeräten"
     },
     {
       count: 4760,
-      text: "Air Conditioning Repairs and Install"
+      text: "zufriedene Stammkunden"
     },
     {
       count: 9032,
-      text: "Air Conditioning Repairs and Install"
+      text: "Einsätze bei Notfällen und Ausfällen"
     }
   ]
 };
@@ -374,49 +321,49 @@ import testimonial2 from "@/images/testimonial/testimonial-2.jpg";
 import testimonial3 from "@/images/testimonial/testimonial-3.jpg";
 
 export const TestimonialOneData = {
-  title: "Testimonials",
+  title: "Kundenstimmen",
   posts: [
     {
       image: testimonial1,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Della Barnett",
-      designation: "CEO"
+        "Schnelle Terminvergabe, transparente Preise und sehr freundlicher Techniker. Unsere Waschmaschine läuft wieder einwandfrei.",
+      name: "Familie H.",
+      designation: "Privatkunde"
     },
     {
       image: testimonial2,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Max Dunn",
-      designation: "Developer"
+        "Der Defekt am Geschirrspüler wurde rasch gefunden und direkt vor Ort behoben. Klare Empfehlung.",
+      name: "Herr K.",
+      designation: "Privatkunde"
     },
     {
       image: testimonial3,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Alberta Potter",
-      designation: "Director"
+        "Kompetente Beratung, ob sich eine Reparatur noch lohnt. Fairer Preis und sehr sorgfältige Arbeit.",
+      name: "Frau L.",
+      designation: "Privatkundin"
     },
     {
       image: testimonial1,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Della Barnett",
-      designation: "CEO"
+        "Freundlicher Kundenservice und schnelle Rückmeldung auf unsere Anfrage. Wir sind sehr zufrieden.",
+      name: "Familie S.",
+      designation: "Privatkunde"
     },
     {
       image: testimonial2,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Max Dunn",
-      designation: "Developer"
+        "Pünktlich, zuverlässig und kompetent – so wünscht man sich einen Kundendienst.",
+      name: "Herr B.",
+      designation: "Privatkunde"
     },
     {
       image: testimonial3,
       content:
-        "This is due to their excellent service, competitive pricing and customer support . It's throughly refresing to get such a personal touch.",
-      name: "Alberta Potter",
-      designation: "Director"
+        "Von der Terminvereinbarung bis zur Reparatur unseres Kühlschranks hat alles reibungslos funktioniert.",
+      name: "Frau M.",
+      designation: "Privatkundin"
     }
   ]
 };
@@ -444,76 +391,46 @@ export const FooterBottomData = {
 
 export const FooterInfo = [
   {
-    icon: "icon-placeholder",
-    tagLine: "Address",
-    text: "66 Broklyn Street, New York",
-    url: "#"
-  },
-  {
     icon: "icon-contact",
-    tagLine: "Email",
-    text: "help@loazzne.com",
-    url: "mailto:help@loazzne.com"
+    tagLine: "E-Mail",
+    text: "office@hgreparatur.at",
+    url: "mailto:office@hgreparatur.at"
   },
   {
     icon: "icon-clock",
-    tagLine: "Open Hours",
-    text: " Mon-Sat: 9am - 6pm",
+    tagLine: "Servicezeiten",
+    text: " Mo–Sa: 9–18 Uhr",
     url: "#"
   }
 ];
 
 export const FooterWidgets = {
   about: {
-    title: "About Loazzne",
-    text: "At Lennom, We don’t just provide resi-dential and commercial heating and air conditioning services; we make people’s lives easier. Better.",
-    tagLine: "Get a Quote",
-    phone: "666 888 000"
+    title: "Über unseren Service",
+    text:
+      "Wir sind auf die Reparatur von Haushaltsgeräten spezialisiert – von Herd und Backofen über Waschmaschine und Trockner bis hin zu Geschirrspüler und Kühlschrank. Unser Ziel: schnelle Hilfe, faire Preise und Transparenz statt unnötigem Neukauf.",
+    tagLine: "Jetzt anrufen",
+    phone: "+436605510339"
   },
   linkOne: {
-    title: "Quick Links",
+    title: "Rechtliches",
     menu: [
       {
-        lable: "Services",
-        url: "#"
+        lable: "Feedback",
+        url: "/feedback"
       },
       {
-        lable: "Request Appointment",
-        url: "#"
+        lable: "Impressum",
+        url: "/impressum"
       },
       {
-        lable: "Site Map",
-        url: "#"
-      },
-      {
-        lable: "About Us",
-        url: "#"
+        lable: "Datenschutz",
+        url: "/datenschutz"
       }
     ]
   },
   linkTwo: {
-    menu: [
-      {
-        lable: "Careers",
-        url: "#"
-      },
-      {
-        lable: "Privacy Policy",
-        url: "#"
-      },
-      {
-        lable: "Change Location",
-        url: "#"
-      },
-      {
-        lable: "Expert Tips",
-        url: "#"
-      },
-      {
-        lable: "Terms & Conditions",
-        url: "#"
-      }
-    ]
+    menu: []
   }
 };
 
@@ -525,34 +442,34 @@ import blog5 from "@/images/blog/blog-5.jpg";
 import blog6 from "@/images/blog/blog-6.jpg";
 
 export const BlogOneData = {
-  title: "Our latest news",
+  title: "Aktuelle Informationen",
   posts: [
     {
       image: blog1,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "How does a ductless heat pump work?",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Tipps rund um Haushaltsgeräte",
+      url: "#",
+      text: "Hier könnten in Zukunft Beiträge mit Pflegetipps und Empfehlungen zu Ihren Haushaltsgeräten stehen."
     },
     {
       image: blog2,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Simple hack to improve A/C efficiency",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Energie sparen im Haushalt",
+      url: "#",
+      text: "Wie Sie mit richtig eingestellten Geräten Energie sparen und die Lebensdauer verlängern können."
     },
     {
       image: blog3,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Preparing your home before vacation",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Haushaltsgeräte vor dem Urlaub",
+      url: "#",
+      text: "Worauf Sie achten sollten, bevor Sie länger verreisen – von Kühlschrank bis Waschmaschine."
     }
   ]
 };
@@ -564,54 +481,54 @@ export const BlogTwoData = {
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "How does a ductless heat pump work?",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Tipps rund um Haushaltsgeräte",
+      url: "#",
+      text: "Hier könnten in Zukunft Beiträge mit Pflegetipps und Empfehlungen zu Ihren Haushaltsgeräten stehen."
     },
     {
       image: blog2,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Simple hack to improve A/C efficiency",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Energie sparen im Haushalt",
+      url: "#",
+      text: "Wie Sie mit richtig eingestellten Geräten Energie sparen und die Lebensdauer verlängern können."
     },
     {
       image: blog3,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Preparing your home before vacation",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Haushaltsgeräte vor dem Urlaub",
+      url: "#",
+      text: "Worauf Sie achten sollten, bevor Sie länger verreisen – von Kühlschrank bis Waschmaschine."
     },
     {
       image: blog4,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Heating and cooling safety issues",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Sicherheit im Umgang mit Geräten",
+      url: "#",
+      text: "Empfehlungen für einen sicheren Betrieb von Herd, Ofen und anderen Geräten."
     },
     {
       image: blog5,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Don’t neglect your outdoor unit",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Pflege und Wartung",
+      url: "#",
+      text: "Warum regelmäßige Reinigung und Wartung Störungen vermeiden kann."
     },
     {
       image: blog6,
       date: "07 Nov",
       author: "admin",
       commentCount: 3,
-      title: "Have your system professionally inspected",
-      url: "/blog-details",
-      text: "There are many variations passages of lorem ipsum available but the majority have suffered alteration."
+      title: "Professionelle Überprüfung von Geräten",
+      url: "#",
+      text: "Wann sich eine fachmännische Kontrolle Ihrer Haushaltsgeräte lohnt."
     }
   ]
 };
@@ -622,35 +539,35 @@ export const VideoOneData = {
 };
 
 export const AboutTwoData = {
-  caption: " 20 <span>years experience</span> ",
+  caption: " Über <span>20 Jahre Erfahrung</span> ",
   blockTitle: {
     title:
-      "We are trusted source of ac and heating maintenance repairs company",
-    tagline: "Why choose us"
+      "Ihr vertrauenswürdiger Partner für Reparaturen von Haushaltsgeräten",
+    tagline: "Warum wir die richtige Wahl sind"
   },
   lists: [
     {
-      text: " Unmatched performance, satisfaction service guarantees"
+      text: " Fachgerechte Reparatur aller gängigen Marken und Geräte"
     },
     {
-      text: " Home protection through our shoe covers and mats"
+      text: " Sorgsamer Umgang mit Ihrer Küche und Ihrem Haushalt"
     },
     {
-      text: " Upfront, flat rate pricing—no overtime charges"
+      text: " Feste, faire Preise – keine versteckten Zusatzkosten"
     },
     {
-      text: " 24 / 7 availability for all emergency services"
+      text: " Schnelle Termine bei dringenden Ausfällen"
     },
     {
-      text: " Fixed right promise—done right or it’s free"
+      text: " Wir reparieren nachhaltig – nicht nur kurzfristig"
     },
     {
-      text: " Clear communication and updates on service arrival"
+      text: " Klare Kommunikation und transparente Beratung"
     }
   ],
   offer: {
-    tagline: "10% off",
-    text: "on our all services for senior citizens."
+    tagline: "10% Rabatt",
+    text: "auf unsere Reparaturleistungen für Senioren."
   }
 };
 
@@ -660,7 +577,7 @@ import team3 from "@/images/team/team-3.jpg";
 import team4 from "@/images/team/team-4.jpg";
 
 export const TeamOneData = {
-  title: "Meet The Team",
+  title: "Unser Team",
   posts: [
     {
       image: team1,
@@ -743,59 +660,59 @@ export const TeamOneData = {
 
 export const AboutThreeData = {
   blockTitle: {
-    tagline: "Our success story",
-    title: "Experience quality air conditioning service in broklyn new york"
+    tagline: "Unsere Erfolgsgeschichte",
+    title: "Professioneller Service für Haushaltsgeräte in Ihrer Region"
   },
   summery:
-    "There are many variations of passages of lorem ipsum available, but the majorify have suffered alteration in some form by injected humour, or randmised words which don't look even slightly believable.",
+    "Was als kleiner Reparaturdienst begonnen hat, ist heute ein eingespieltes Team aus Spezialisten für alle großen Haushaltsgeräte. Wir kombinieren Praxis-Erfahrung mit modernem Know-how und sorgen dafür, dass Ihre Küche und Ihr Haushalt schnell wieder voll einsatzbereit sind.",
   button: {
-    lable: "LEARN MORE",
+    lable: "MEHR ERFAHREN",
     url: "/about"
   },
   box: [
     {
       icon: "icon-maintenance",
-      title: "We make as cool again"
+      title: "Wir bringen Ihre Geräte wieder zum Laufen"
     },
     {
       icon: "icon-big-ac",
-      title: "Keep your business cool"
+      title: "Weniger Ausfälle, mehr Komfort zu Hause"
     }
   ]
 };
 
 export const AboutFourData = {
   blockTitle: {
-    title: "We are trusted by more than <span>8900</span> clients",
+    title: "Mehr als <span>8900</span> zufriedene Kunden vertrauen uns",
     text1:
-      "Tincidunt elit magnis nulla facilisis sagittis is maecenas. Sapien nunced amet ultrices, dolores sit ipsum velit purus aliquet, massa fringilla leo orci.",
+      "Seit vielen Jahren kümmern wir uns um defekte Haushaltsgeräte in privaten Haushalten, kleinen Betrieben und Büros. Unsere Kunden schätzen unsere ehrliche Beratung, pünktliche Termine und saubere Arbeit.",
     text2:
-      "Lorem ipsum dolors sit amet elit magnis amet ultrices purusrfed aliquet. There are many varia-tions of passages of available but the majarity have suffered."
+      "Ob Herd, Backofen, Waschmaschine, Geschirrspüler, Mikrowelle oder Kühlschrank – wir finden die Ursache, erklären die Optionen und führen die Reparatur transparent und zuverlässig durch."
   }
 };
 
 export const BenefitOneData = {
-  title: "Our benefits",
+  title: "Ihre Vorteile mit unserem Reparaturservice",
   posts: [
     {
       icon: "icon-big_clock",
-      title: "Emergency Service",
-      text: "There are many passages of lorem ipsum available but the majority have alteration."
+      title: "Schnelle Hilfe",
+      text: "Kurze Reaktionszeiten, damit Ihre wichtigsten Geräte schnell wieder funktionieren."
     },
     {
       icon: "icon-wallet",
-      title: "No Upfront Payment",
-      text: "There are many passages of lorem ipsum available but the majority have alteration."
+      title: "Faire Preise",
+      text: "Transparente Kosten, die sich meist deutlich unter einem Neukauf bewegen."
     },
     {
       icon: "icon-diploma",
-      title: "Satisfaction Guarantee",
-      text: "There are many passages of lorem ipsum available but the majority have alteration."
+      title: "Qualifizierte Techniker",
+      text: "Erfahrene Spezialisten mit Fokus auf Haushaltsgeräte-Reparaturen."
     },
     {
       icon: "icon-mechanic",
-      title: "8 Years Experience",
-      text: "There are many passages of lorem ipsum available but the majority have alteration."
+      title: "Langjährige Erfahrung",
+      text: "Tausende Reparaturen und langjährige Stammkunden sprechen für uns."
     }
   ]
 };
@@ -803,53 +720,53 @@ export const BenefitOneData = {
 export const ServiceSidebarListData = [
   {
     icon: "icon-snow",
-    title: "Cooling Services",
+    title: "Küchen- & Kochgeräte",
     list: [
       {
-        label: "Air Conditioner Maintenance",
-        url: "#"
+        label: "Herd & Backofen Reparatur",
+        url: "/services/herd-backofen-reparatur"
       },
       {
-        label: "Air Conditioner Repair",
-        url: "#"
+        label: "Elektroherd Reparatur",
+        url: "/services/elektroherd-reparatur"
       },
       {
-        label: "Air Conditioner Replacement",
-        url: "#"
+        label: "Mikrowellen Reparatur",
+        url: "/services/mikrowellen-reparatur"
       },
       {
-        label: "Ductless Split AC Systems",
-        url: "#"
+        label: "Geschirrspüler Reparatur",
+        url: "/services/geschirrspueler-reparatur"
       },
       {
-        label: "Duct Cleaning & Installation",
-        url: "#"
+        label: "Altgeräte Entsorgen",
+        url: "/services/altgeraete-entsorgen"
       }
     ]
   },
   {
     icon: "icon-fire",
-    title: "Heating Services",
+    title: "Waschen & Kühlen",
     list: [
       {
-        label: "Air Conditioner Maintenance",
-        url: "#"
+        label: "Waschmaschinen Reparatur",
+        url: "/services/waschmaschinen-reparatur"
       },
       {
-        label: "Air Conditioner Repair",
-        url: "#"
+        label: "Trockner Reparatur",
+        url: "/services/trockner-reparatur"
       },
       {
-        label: "Air Conditioner Replacement",
-        url: "#"
+        label: "Kühlschrank Reparatur",
+        url: "/services/kuehlschrank-reparatur"
       },
       {
-        label: "Ductless Split AC Systems",
-        url: "#"
+        label: "Notdienst bei Geräteausfall",
+        url: "/contact"
       },
       {
-        label: "Duct Cleaning & Installation",
-        url: "#"
+        label: "Beratung Reparatur vs. Neukauf",
+        url: "/contact"
       }
     ]
   }
@@ -861,7 +778,7 @@ export const ServiceSidebarOtherData = [
     title: "Other Services",
     content: {
       icon: "icon-support",
-      title: "<span>Contact with us </span>666 888 000"
+      title: "<span>Kontaktieren Sie uns </span>+436605510339"
     }
   },
   {
@@ -869,7 +786,7 @@ export const ServiceSidebarOtherData = [
     title: "Commercial Services",
     content: {
       icon: "icon-building",
-      title: "<span>Contact with us </span>666 888 000"
+      title: "<span>Kontaktieren Sie uns </span>+436605510339"
     }
   }
 ];
