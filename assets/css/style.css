@@ -588,6 +588,13 @@ body {
   line-height: 70px;
   color: #ffffff;
 }
+@media (max-width: 767px) {
+  .header_slider_area h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin: 10px 0 20px 0;
+  }
+}
 .home_v2_header_slider .col-lg-6 {
   padding: 0;
 }
