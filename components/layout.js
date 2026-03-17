@@ -1,6 +1,5 @@
 import React, { Fragment, useContext, useEffect, useState } from "react";
 import Head from "next/head";
-import { Link as ScrollLink } from "react-scroll";
 import MobileMenu from "./mobile-menu";
 import { MenuContext } from "@/context/menu-context";
 
@@ -34,15 +33,14 @@ const Layout = ({ PageTitle, children }) => {
 
       {true === menuStatus ? <MobileMenu /> : null}
       {scrollTop === true ? (
-        <ScrollLink
-          to="wrapper"
-          smooth={true}
-          duration={500}
+        <a
+          href="tel:+436605510339"
           id="backToTop"
           className="scroll-to-top scroll-to-target"
+          aria-label="Jetzt anrufen"
         >
-          <i className="fa fa-angle-up"></i>
-        </ScrollLink>
+          <i className="fa fa-phone"></i>
+        </a>
       ) : null}
     </Fragment>
   );

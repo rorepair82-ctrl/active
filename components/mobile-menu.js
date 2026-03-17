@@ -1,6 +1,7 @@
 import React, { useContext, Fragment, useRef } from "react";
 import Link from "@/components/link";
-import { FooterBottomData, NavLinksData } from "@/data";
+import Img from "@/components/img";
+import { FooterBottomData, NavLinksData, Logo } from "@/data";
 import { MenuContext } from "@/context/menu-context";
 
 const MobileMenu = () => {
@@ -16,7 +17,9 @@ const MobileMenu = () => {
       <div className="mobile-menu__inner">
         <div className="mobile-menu__top">
           <h1 className="mobile-menu__logo">
-            <Link href="/">Loazzne</Link>
+            <Link href="/">
+              <Img src={Logo.dark} alt="HG Reparatur Logo" />
+            </Link>
           </h1>
           <a href="#" className="mobile-menu__close" onClick={handleMenuClick}>
             <i className="fa fa-times"></i>
@@ -65,17 +68,6 @@ const MobileMenu = () => {
             })}
           </ul>
         </nav>
-        <div className="mobile-menu__text">
-          Loazzne is a modern & professional NextJS Template for air
-          conditioning, cooling/heating, HVAC and ventilation services. It is
-          also very good for any other home repair, services and maintenance
-          businesses.
-        </div>
-        <div className="mobile-menu__socials">
-          {FooterBottomData.social.map(({ icon, url }, index) => {
-            return <a key={index} href={url} className={`${icon}`}></a>;
-          })}
-        </div>
       </div>
     </div>
   );

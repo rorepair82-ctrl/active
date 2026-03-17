@@ -14,7 +14,7 @@ export const NavLinksData = [
   },
   {
     name: "Leistungen",
-    url: "/services",
+    url: "/service",
     subItems: [
       {
         name: "Alle Services",

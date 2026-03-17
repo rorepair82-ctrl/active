@@ -3124,13 +3124,19 @@ textarea {
 .mobile-menu__logo {
   text-transform: uppercase;
   color: #fff;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: bold;
   letter-spacing: -0.03em;
 }
 
 .mobile-menu__logo a {
   color: inherit;
+}
+
+.mobile-menu__logo img {
+  max-height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .mobile-menu__links {
