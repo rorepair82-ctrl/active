@@ -2351,12 +2351,8 @@ section.about_area img.about_shape {
 # .0 Contact form
 ------------------------------------*/
 .contact_form_area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
   background-color: #f5f7fb;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 .contact_form_area .contact_form_width {
   -ms-flex: 1;
@@ -2381,12 +2377,13 @@ input.half_width {
   float: left;
 }
 .contact_form_width.contact-right {
-  padding: 40px 30px 50px;
-  max-width: 720px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  padding: 40px 20px 50px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background-color: #f5f7fb;
+  border-radius: 0;
+  box-shadow: none;
 }
 .contact-right-style-2 input.input_m_right,
 .contact_form_width input.input_m_right {

@@ -124,7 +124,6 @@ const ServicePost = () => {
 
   return (
     <div className="service_details_left">
-      <Img src={servicedetails1} alt="Service Details Image" />
       <h1>{content.title}</h1>
       <p>{content.intro}</p>
       <h2>Typische Probleme bei diesem Service</h2>

@@ -41,11 +41,6 @@ const ContactOne = () => {
           <h4 className="heading_with_border">
             Schnellanfrage – wir rufen Sie zurück!
           </h4>
-          <h1>
-            Hinterlassen Sie uns Ihre Kontaktdaten und eine kurze
-            Problembeschreibung. Unser Service‑Team meldet sich so rasch wie
-            möglich telefonisch bei Ihnen.
-          </h1>
           <p className="contact_form_hotline">
             Oder rufen Sie uns direkt an unter{" "}
             <a href="tel:+436605510339">+43 660 551 0339</a>.

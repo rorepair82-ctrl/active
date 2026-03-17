@@ -15,11 +15,11 @@ const HomeOne = () => {
       <Layout PageTitle="Startseite">
         <HeaderOne />
         <SliderOne />
+        <ContactOne />
         <FeatureOne />
         <AboutOne />
         <ServiceOne />
         <CtaOne />
-        <ContactOne />
         <Footer />
       </Layout>
     </MenuContextProvider>
