@@ -24,7 +24,7 @@ const ContactThree = () => {
                   <span className="icon-contact_call"></span>
                   <p>
                     office@hgreparatur.at <br />
-                    +436605510339
+                    +4314420391
                   </p>
                 </div>
               </div>
