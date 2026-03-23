@@ -70,7 +70,7 @@ const HeaderOne = () => {
                 })}
               </ul>
             </nav>
-            <Link href="tel:+436605510339" className="btn-yellow">
+            <Link href="tel:++4314420391" className="btn-yellow">
               JETZT ANRUFEN
             </Link>
           </div>
