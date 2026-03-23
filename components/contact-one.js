@@ -43,7 +43,7 @@ const ContactOne = () => {
           </h4>
           <p className="contact_form_hotline">
             Oder rufen Sie uns direkt an unter{" "}
-            <a href="tel:+436605510339">+43 660 551 0339</a>.
+            <a href="tel:++4314420391">+43 1 4420391</a>.
           </p>
         </div>
         <form onSubmit={handleSubmit} className="feedback_form">
@@ -80,7 +80,7 @@ const ContactOne = () => {
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="z.B. +43 660 551 0339"
+                placeholder="z.B. +43 1 4420391"
               />
             </div>
             <div className="half_width">
