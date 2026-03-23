@@ -79,7 +79,7 @@ export const SlideOneData = [
     title: "Ihr Partner für Haushaltsgeräte Reparatur",
     text: "Schnell, zuverlässig, vor Ort",
     button: "JETZT ANRUFEN",
-    url: "tel:+436605510339"
+    url: "tel:++4314420391"
   }
 ];
 
@@ -410,7 +410,7 @@ export const FooterWidgets = {
     text:
       "Wir sind auf die Reparatur von Haushaltsgeräten spezialisiert – von Herd und Backofen über Waschmaschine und Trockner bis hin zu Geschirrspüler und Kühlschrank. Unser Ziel: schnelle Hilfe, faire Preise und Transparenz statt unnötigem Neukauf.",
     tagLine: "Jetzt anrufen",
-    phone: "+436605510339"
+    phone: "+4314420391"
   },
   linkOne: {
     title: "Rechtliches",
@@ -778,7 +778,7 @@ export const ServiceSidebarOtherData = [
     title: "Other Services",
     content: {
       icon: "icon-support",
-      title: "<span>Kontaktieren Sie uns </span>+436605510339"
+      title: "<span>Kontaktieren Sie uns </span>+4314420391"
     }
   },
   {
@@ -786,7 +786,7 @@ export const ServiceSidebarOtherData = [
     title: "Commercial Services",
     content: {
       icon: "icon-building",
-      title: "<span>Kontaktieren Sie uns </span>+436605510339"
+      title: "<span>Kontaktieren Sie uns </span>+4314420391"
     }
   }
 ];
