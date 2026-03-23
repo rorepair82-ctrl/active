@@ -34,7 +34,7 @@ const Layout = ({ PageTitle, children }) => {
       {true === menuStatus ? <MobileMenu /> : null}
       {scrollTop === true ? (
         <a
-          href="tel:+436605510339"
+          href="tel:++4314420391"
           id="backToTop"
           className="scroll-to-top scroll-to-target"
           aria-label="Jetzt anrufen"
