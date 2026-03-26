@@ -79,7 +79,7 @@ export const SlideOneData = [
     title: "Ihr Partner für Haushaltsgeräte Reparatur",
     text: "Schnell, zuverlässig, vor Ort",
     button: "JETZT ANRUFEN",
-    url: "tel:++4314420391"
+    url: "tel:+4314420391"
   }
 ];
 
